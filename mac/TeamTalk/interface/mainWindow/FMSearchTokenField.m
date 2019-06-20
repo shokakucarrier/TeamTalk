@@ -105,7 +105,7 @@ loc_100111c58:
         if ([view isKindOfClass:[FMSearchTokenFieldCell class]]) {
             NSRect cellRect ;
             if ([self cell]) {
-                cellRect = [[self cell] bounds];
+                cellRect = NSMakeRect(100, 100, 50, 50);
             }
             NSRect imageRect ;
             NSRect textRect;

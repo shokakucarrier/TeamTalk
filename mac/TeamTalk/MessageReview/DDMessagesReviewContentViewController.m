@@ -54,7 +54,7 @@ static CGFloat const lineHeight = 2;
 - (void)awakeFromNib
 {
     _bottom = 0;
-    [_messageScrollView.documentView setFlipped:YES];
+    [_messageScrollView.documentView isFlipped];
     [self p_registkvo];
 }
 

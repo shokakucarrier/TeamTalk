@@ -20,7 +20,10 @@ PODS:
   - AFNetworking/UIKit (2.3.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Crashlytics (3.13.1):
+    - Fabric (~> 1.10.1)
   - DACircularProgress (2.2.0)
+  - Fabric (1.10.1)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
   - FMDB/common (2.5)
@@ -49,7 +52,9 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.3.0)
+  - Crashlytics
   - DACircularProgress (~> 2.2.0)
+  - Fabric
   - FMDB (~> 2.3)
   - HPGrowingTextView (~> 1.1)
   - Masonry
@@ -64,9 +69,31 @@ DEPENDENCIES:
   - XHImageViewer
   - ZXingObjC
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Crashlytics
+    - DACircularProgress
+    - Fabric
+    - FMDB
+    - HPGrowingTextView
+    - Masonry
+    - MBProgressHUD
+    - MWPhotoBrowser
+    - ProtocolBuffers
+    - PSTCollectionView
+    - SCLAlertView-Objective-C
+    - SDWebImage
+    - SVWebViewController
+    - TTTAttributedLabel
+    - XHImageViewer
+    - ZXingObjC
+
 SPEC CHECKSUMS:
   AFNetworking: 05b9f6e3aa5ac45bc383b4bb108ef338080a26c7
+  Crashlytics: 5aa8e90dcbf2f34898b4f5a0037787531246cca0
   DACircularProgress: 0f92b77239d5f3c612fc66185e2998391ac8e054
+  Fabric: f6f21452846788bb44595d73e9909d79d328e617
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
@@ -81,4 +108,6 @@ SPEC CHECKSUMS:
   XHImageViewer: 7b275d2aa829e56761c30303b9d51cae086a90b9
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 9ef19c48eac57f1049d430ccf5b00a603504ba0a
+
+COCOAPODS: 1.7.2
