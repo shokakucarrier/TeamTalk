@@ -196,7 +196,7 @@
 	{
 		if ( view.opaque )
 		{
-			NSMutableDictionary * info = (NSMutableDictionary *) (CFDictionaryGetValue( _selectionColorInfo, (__bridge void*)(view) ));
+			NSMutableDictionary * info = (NSMutableDictionary *)CFDictionaryGetValue( _selectionColorInfo, (__bridge void*)(view) );
 			if ( info == nil )
 			{
 				info = [NSMutableDictionary dictionaryWithCapacity: 2];
@@ -220,7 +220,7 @@
 {
 	for ( UIView * view in aView.subviews )
 	{
-		NSMutableDictionary * info = (NSMutableDictionary *) (CFDictionaryGetValue( _selectionColorInfo, (__bridge void*)(view) ));
+		NSMutableDictionary * info = (NSMutableDictionary *) CFDictionaryGetValue( _selectionColorInfo, (__bridge void*)(view) );
 		if ( info != nil )
 		{
 			id value = [info objectForKey: @"backgroundColor"];
@@ -245,7 +245,7 @@
 	{
 		if ( [view respondsToSelector: @selector(setHighlighted:)] )
 		{
-			NSMutableDictionary * info = (NSMutableDictionary *) (CFDictionaryGetValue( _selectionColorInfo, (__bridge void*)(view) ));
+			NSMutableDictionary * info = (NSMutableDictionary *) CFDictionaryGetValue( _selectionColorInfo, (__bridge void*)(view) );
 			if ( info == nil )
 			{
 				info = [NSMutableDictionary dictionaryWithCapacity: 2];
@@ -275,7 +275,7 @@
 	for ( UIView * view in aView.subviews )
 	{
 		if ([view respondsToSelector:@selector(setHighlighted:)]) {
-			NSMutableDictionary * info = (NSMutableDictionary *) (CFDictionaryGetValue( _selectionColorInfo, (__bridge void*)(view) ));
+			NSMutableDictionary * info = (NSMutableDictionary *) CFDictionaryGetValue( _selectionColorInfo, (__bridge void*)(view) );
 			if ( info != nil )
 			{
 				id value = [info objectForKey: @"highlighted"];
